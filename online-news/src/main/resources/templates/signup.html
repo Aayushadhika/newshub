@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website Sign Up</title>
+    <link rel="stylesheet" th:href="@{/css/signup.css}">
+</head>
+<body>
+<div class="container">
+    <h1>Sign Up for Our Gym</h1>
+    <form  action="/signupdata" method="post">
+
+        <input type="text" id="fullname" name="username" placeholder="Full Name" required>
+        <input type="email" id="email" name="useremail" placeholder="Email Address" required>
+        <input type="password" id="password" name="userpassword" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+        <p id="error-message"></p>
+    </form>
+    <p>Already have Account?</p>
+    <a href="/login">login</a>
+</div>
+
+
+
+</body>
+</html>

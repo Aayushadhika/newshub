@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>News Submission Form</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #0939fa;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        <a href="">Go to Other Page</a>
+
+has context menu
+</style>
+</head>
+<body>
+<h1>Submit News</h1>
+<form action="/submit_news" method="post">
+<label for="title">Title:</label>
+<input type="text" id="title" name="title" required><br>
+
+<label for="content">Content:</label><br>
+<textarea id="content" name="content" rows="4" cols="50" required></textarea><br>
+
+<label for="author">Your Name:</label>
+<input type="text" id="author" name="author"><br>
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email"><br>
+
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
+has context menu
+Compose
