@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            overflow-x: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: box-shadow 0.3s;
+            border-radius: 10px;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card .btn-primary {
+            background-color: #E30B5D;
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 5px;
+        }
+
+        .card-title {
+            color: #222;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-text {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .card-img-top {
+            object-fit: cover;
+            height: 200px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .hr-custom {
+            border: none;
+            border-bottom: 2px solid #E30B5D;
+        }
+
+        h1 {
+            color: #E30B5D;
+            font-family: 'Helvetica', sans-serif;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .container {
+            max-width: 1200px;
+        }
+
+        .row {
+            margin-bottom: 2rem;
+        }
+
+        .btn-see-more {
+            background-color: #E30B5D;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-see-more:hover {
+            background-color: #C4004D;
+        }
+    </style>
+
+    <title>Sport News Online</title>
+
+</head>
+
+<body>
+
+<header th:replace="fragments :: header"></header>
+
+<div class="container my-5">
+
+    <h1 class="text-center">Sport News</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://ichef.bbci.co.uk/onesport/cps/976/cpsprodpb/14DFB/production/_130599458_kane.png" class="card-img-top" alt="Article 1">
+                <div class="card-body">
+                    <h5 class="card-title">Tuesday's gossip: Kane, Mbappe, Lavia, Johnson, Franca, Verratti, Osimhen, Vlahovic, Ward-Prowse</h5>
+                    <p class="card-text">Bayern Munich are prepared to break the club-record 80m euros (£68m) fee they paid for French defender Lucas Hernandez, 27, to sign England striker Harry Kane, 30, from Tottenham..</p>
+                    <a href="#" class="btn btn-primary btn-see-more">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/13-02-2023-MINUSMA-mali-soccer.jpg/image1170x530cropped.jpg" class="card-img-top" alt="Article 2">
+                <div class="card-body">
+                    <h5 class="card-title">Power of sport to counter violent extremism amplified at UN
+                    </h5>
+                    <p class="card-text">Sport can change the world, famous footballers and grassroots gamechangers alike said at a roundtable discussion on Monday, highlighting a new UN podcast series to mark the first International Day for the Prevention of Violent Extremism, as and when Conducive to Terrorism.</p>
+                    <a href="#" class="btn btn-primary btn-see-more">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://img.olympicchannel.com/images/image/private/t_s_w1340/t_s_16_9_g_auto/f_auto/primary/haoe5q0nwd9a1xagplnx" class="card-img-top" alt="Article 3">
+                <div class="card-body">
+                    <h5 class="card-title">Five things we learned from the 2022 FIFA World Cup in Qatar</h5>
+                    <p class="card-text">Argentina were crowned champions of the world after a dramatic penalty shootout in Lusail Stadium brought an end to a World Cup acclaimed as one of the best ever. Olympics.com brings you five things we learned from the 2022 FIFA World Cup in Qatar.</p>
+                    <a href="#" class="btn btn-primary btn-see-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add more news articles here -->
+
+    <div class="text-center">
+        <a href="#" class="btn btn-see-more">Load More News</a>
+    </div>
+
+</div>
+
+<footer th:replace="fragments :: footer"></footer>
+
+</body>
+</html>

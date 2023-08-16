@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" th:href="@{/css/Login.css}">
+</head>
+<body>
+<div class="container">
+    <h1>Login</h1>
+    <form id="login-form" action="/logindata" method="post">
+        <input type="text" name="useremail" placeholder="useremail" required>
+        <input type="password" name="userpassword" placeholder="userpassword" required>
+        <button type="submit">Login</button>
+        <p id="error-message"></p>
+    </form>
+    <p>Create New Account?</p>
+    <a href="/signup"> Signup</a>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!--<script th:src="@{/javascript/login.js}"></script>-->
+
+</body>
+</html>
